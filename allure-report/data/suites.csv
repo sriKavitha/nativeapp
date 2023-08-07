@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Aug 06 11:45:30 EDT 2023","Sun Aug 06 11:46:19 EDT 2023","49101","","Android app user - Ticketscan Login screen opens the Camera screen","","","","Verify login from Ticketscan Login screen opens the Camera screen","Description: User uses NYL app to open camera"

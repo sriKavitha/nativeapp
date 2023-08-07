@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2020-03-13 09:58:52</p>
+                <p class='attribute'><strong>Duration: </strong>155 ms</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 25, Pass: 8, Error: 17</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.NYLsftp</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test00_checkLoginNoPwNYL</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>incorrect password test passed
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test01_checkLoginNoUnNYL</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>incorrect username test passed
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test02_checkFileStructureNYL</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">Exception: E--- Error using correct UN/PW!</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 58, in test02_checkFileStructureNYL
+    with pysftp.Connection(host=self.myHostname, username=self.myUsername, password=self.myPassword) as sftp:
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 140, in __init__
+    self._start_transport(host, port)
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 176, in _start_transport
+    self._transport = paramiko.Transport((host, port))
+  File "/usr/local/lib/python3.7/site-packages/paramiko/transport.py", line 416, in __init__
+    "Unable to connect to {}: {}".format(hostname, reason)
+paramiko.ssh_exception.SSHException: Unable to connect to 3.224.61.150: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 83, in test02_checkFileStructureNYL
+    raise Exception("E--- Error using correct UN/PW!")
+Exception: E--- Error using correct UN/PW!
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test03_checkDownloadMcCannFileNYL</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">Exception: E--- Unable to DL McCann File as NYL user!</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 86, in test03_checkDownloadMcCannFileNYL
+    with pysftp.Connection(host=self.myHostname, username=self.myUsername, password=self.myPassword) as sftp:
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 140, in __init__
+    self._start_transport(host, port)
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 176, in _start_transport
+    self._transport = paramiko.Transport((host, port))
+  File "/usr/local/lib/python3.7/site-packages/paramiko/transport.py", line 416, in __init__
+    "Unable to connect to {}: {}".format(hostname, reason)
+paramiko.ssh_exception.SSHException: Unable to connect to 3.224.61.150: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 92, in test03_checkDownloadMcCannFileNYL
+    raise Exception("E--- Unable to DL McCann File as NYL user!")
+Exception: E--- Unable to DL McCann File as NYL user!
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test04_checkDownloadNylFileNYL</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">Exception: E--- Unable to DL NYL File as NYL user!</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 97, in test04_checkDownloadNylFileNYL
+    with pysftp.Connection(host=self.myHostname, username=self.myUsername, password=self.myPassword) as sftp:
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 140, in __init__
+    self._start_transport(host, port)
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 176, in _start_transport
+    self._transport = paramiko.Transport((host, port))
+  File "/usr/local/lib/python3.7/site-packages/paramiko/transport.py", line 416, in __init__
+    "Unable to connect to {}: {}".format(hostname, reason)
+paramiko.ssh_exception.SSHException: Unable to connect to 3.224.61.150: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 101, in test04_checkDownloadNylFileNYL
+    raise Exception('E--- Unable to DL NYL File as NYL user!')
+Exception: E--- Unable to DL NYL File as NYL user!
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test05_checkUploadMcCannFileNYL</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>NYL user Uploading Mccann file test passed
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test06_checkUploadNylFileNYL</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>W--W--- Check for non deleted file
+</p><p style="color:maroon;">Exception: E--- Unable to Upload NYL File as NYL user!</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 121, in test06_checkUploadNylFileNYL
+    with pysftp.Connection(host=self.myHostname, username=self.myUsername, password=self.myPassword) as sftp:
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 140, in __init__
+    self._start_transport(host, port)
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 176, in _start_transport
+    self._transport = paramiko.Transport((host, port))
+  File "/usr/local/lib/python3.7/site-packages/paramiko/transport.py", line 416, in __init__
+    "Unable to connect to {}: {}".format(hostname, reason)
+paramiko.ssh_exception.SSHException: Unable to connect to 3.224.61.150: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 128, in test06_checkUploadNylFileNYL
+    raise Exception('E--- Unable to Upload NYL File as NYL user!')
+Exception: E--- Unable to Upload NYL File as NYL user!
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test07_checkSshCanNotLoginNYL</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>incorrect username for ssh test passed
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test08_checkSshCanLoginSSHnyl</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">Exception: E--- Unable to log in with SSH key with correct username!</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 141, in test08_checkSshCanLoginSSHnyl
+    with pysftp.Connection(host=self.myHostname, username=self.myUsernameSSL, private_key=self.private_key, cnopts=self.cnopts) as sftp:
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 140, in __init__
+    self._start_transport(host, port)
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 176, in _start_transport
+    self._transport = paramiko.Transport((host, port))
+  File "/usr/local/lib/python3.7/site-packages/paramiko/transport.py", line 416, in __init__
+    "Unable to connect to {}: {}".format(hostname, reason)
+paramiko.ssh_exception.SSHException: Unable to connect to 3.224.61.150: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 144, in test08_checkSshCanLoginSSHnyl
+    raise Exception('E--- Unable to log in with SSH key with correct username!')
+Exception: E--- Unable to log in with SSH key with correct username!
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test09_checkFileStructureSSHnyl</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">Exception: E--- Error using correct UN/PW!</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 149, in test09_checkFileStructureSSHnyl
+    with pysftp.Connection(host=self.myHostname, username=self.myUsernameSSL, private_key=self.private_key, cnopts=self.cnopts) as sftp:
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 140, in __init__
+    self._start_transport(host, port)
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 176, in _start_transport
+    self._transport = paramiko.Transport((host, port))
+  File "/usr/local/lib/python3.7/site-packages/paramiko/transport.py", line 416, in __init__
+    "Unable to connect to {}: {}".format(hostname, reason)
+paramiko.ssh_exception.SSHException: Unable to connect to 3.224.61.150: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 167, in test09_checkFileStructureSSHnyl
+    raise Exception("E--- Error using correct UN/PW!")
+Exception: E--- Error using correct UN/PW!
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test10_checkDownloadMcCannFileSSHnyl</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">Exception: E--- Unable to DL McCann File as NYL user!</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 171, in test10_checkDownloadMcCannFileSSHnyl
+    with pysftp.Connection(host=self.myHostname, username=self.myUsernameSSL, private_key=self.private_key, cnopts=self.cnopts) as sftp:
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 140, in __init__
+    self._start_transport(host, port)
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 176, in _start_transport
+    self._transport = paramiko.Transport((host, port))
+  File "/usr/local/lib/python3.7/site-packages/paramiko/transport.py", line 416, in __init__
+    "Unable to connect to {}: {}".format(hostname, reason)
+paramiko.ssh_exception.SSHException: Unable to connect to 3.224.61.150: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 175, in test10_checkDownloadMcCannFileSSHnyl
+    raise Exception("E--- Unable to DL McCann File as NYL user!")
+Exception: E--- Unable to DL McCann File as NYL user!
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test11_checkDownloadNylFileSSHnyl</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">Exception: E--- Unable to DL NYL File as NYL user!</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 179, in test11_checkDownloadNylFileSSHnyl
+    with pysftp.Connection(host=self.myHostname, username=self.myUsernameSSL, private_key=self.private_key, cnopts=self.cnopts) as sftp:
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 140, in __init__
+    self._start_transport(host, port)
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 176, in _start_transport
+    self._transport = paramiko.Transport((host, port))
+  File "/usr/local/lib/python3.7/site-packages/paramiko/transport.py", line 416, in __init__
+    "Unable to connect to {}: {}".format(hostname, reason)
+paramiko.ssh_exception.SSHException: Unable to connect to 3.224.61.150: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 183, in test11_checkDownloadNylFileSSHnyl
+    raise Exception('E--- Unable to DL NYL File as NYL user!')
+Exception: E--- Unable to DL NYL File as NYL user!
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test12_checkUploadMcCannFileSSHnyl</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>NYL user Uploading Mccann file test passed
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test13_checkuploadNylFileSSHnyl</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>W--W--- Check for non deleted file
+</p><p style="color:maroon;">Exception: E--- Unable to Upload NYL File as NYL user!</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 201, in test13_checkuploadNylFileSSHnyl
+    with pysftp.Connection(host=self.myHostname, username=self.myUsernameSSL, private_key=self.private_key, cnopts=self.cnopts) as sftp:
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 140, in __init__
+    self._start_transport(host, port)
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 176, in _start_transport
+    self._transport = paramiko.Transport((host, port))
+  File "/usr/local/lib/python3.7/site-packages/paramiko/transport.py", line 416, in __init__
+    "Unable to connect to {}: {}".format(hostname, reason)
+paramiko.ssh_exception.SSHException: Unable to connect to 3.224.61.150: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 208, in test13_checkuploadNylFileSSHnyl
+    raise Exception('E--- Unable to Upload NYL File as NYL user!')
+Exception: E--- Unable to Upload NYL File as NYL user!
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test14_checkFileStructureMc</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">Exception: E--- Error using correct UN/PW!</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 214, in test14_checkFileStructureMc
+    with pysftp.Connection(host=self.myHostname, username=self.myUsernameMc, password=self.myPasswordMc) as sftp:
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 140, in __init__
+    self._start_transport(host, port)
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 176, in _start_transport
+    self._transport = paramiko.Transport((host, port))
+  File "/usr/local/lib/python3.7/site-packages/paramiko/transport.py", line 416, in __init__
+    "Unable to connect to {}: {}".format(hostname, reason)
+paramiko.ssh_exception.SSHException: Unable to connect to 3.224.61.150: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 232, in test14_checkFileStructureMc
+    raise Exception("E--- Error using correct UN/PW!")
+Exception: E--- Error using correct UN/PW!
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test15_checkDownloadMcCannFileMc</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">Exception: E--- Unable to DL McCann File as NYL user!</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 236, in test15_checkDownloadMcCannFileMc
+    with pysftp.Connection(host=self.myHostname, username=self.myUsernameMc, password=self.myPasswordMc) as sftp:
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 140, in __init__
+    self._start_transport(host, port)
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 176, in _start_transport
+    self._transport = paramiko.Transport((host, port))
+  File "/usr/local/lib/python3.7/site-packages/paramiko/transport.py", line 416, in __init__
+    "Unable to connect to {}: {}".format(hostname, reason)
+paramiko.ssh_exception.SSHException: Unable to connect to 3.224.61.150: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 240, in test15_checkDownloadMcCannFileMc
+    raise Exception("E--- Unable to DL McCann File as NYL user!")
+Exception: E--- Unable to DL McCann File as NYL user!
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test16_checkDownloadNylFileMc</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">Exception: E--- Unable to DL NYL File as NYL user!</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 244, in test16_checkDownloadNylFileMc
+    with pysftp.Connection(host=self.myHostname, username=self.myUsernameMc, password=self.myPasswordMc) as sftp:
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 140, in __init__
+    self._start_transport(host, port)
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 176, in _start_transport
+    self._transport = paramiko.Transport((host, port))
+  File "/usr/local/lib/python3.7/site-packages/paramiko/transport.py", line 416, in __init__
+    "Unable to connect to {}: {}".format(hostname, reason)
+paramiko.ssh_exception.SSHException: Unable to connect to 3.224.61.150: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 248, in test16_checkDownloadNylFileMc
+    raise Exception('E--- Unable to DL NYL File as NYL user!')
+Exception: E--- Unable to DL NYL File as NYL user!
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test17_checkUploadNylFileMc</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>McCann user Uploading NYL file test passed
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test18_checkUploadMcCannFileMc</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>W--W--- Check for non deleted file
+</p><p style="color:maroon;">Exception: E--- Unable to Upload McCann File as McCann user!</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 266, in test18_checkUploadMcCannFileMc
+    with pysftp.Connection(host=self.myHostname, username=self.myUsernameMc, password=self.myPasswordMc) as sftp:
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 140, in __init__
+    self._start_transport(host, port)
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 176, in _start_transport
+    self._transport = paramiko.Transport((host, port))
+  File "/usr/local/lib/python3.7/site-packages/paramiko/transport.py", line 416, in __init__
+    "Unable to connect to {}: {}".format(hostname, reason)
+paramiko.ssh_exception.SSHException: Unable to connect to 3.224.61.150: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 273, in test18_checkUploadMcCannFileMc
+    raise Exception('E--- Unable to Upload McCann File as McCann user!')
+Exception: E--- Unable to Upload McCann File as McCann user!
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test19_checkSshCanNotLoginMc</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>incorrect username for ssh test passed
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test20_checkFileStructureMcSLL</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">Exception: E--- Error using correct UN/PW!</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 287, in test20_checkFileStructureMcSLL
+    with pysftp.Connection(host=self.myHostname, username=self.myUsernameMcSLL, private_key=self.private_key, cnopts=self.cnopts) as sftp:
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 140, in __init__
+    self._start_transport(host, port)
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 176, in _start_transport
+    self._transport = paramiko.Transport((host, port))
+  File "/usr/local/lib/python3.7/site-packages/paramiko/transport.py", line 416, in __init__
+    "Unable to connect to {}: {}".format(hostname, reason)
+paramiko.ssh_exception.SSHException: Unable to connect to 3.224.61.150: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 305, in test20_checkFileStructureMcSLL
+    raise Exception("E--- Error using correct UN/PW!")
+Exception: E--- Error using correct UN/PW!
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test21_checkDownloadMcCannFileMcSLL</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">Exception: E--- Unable to DL McCann File as NYL user!</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 309, in test21_checkDownloadMcCannFileMcSLL
+    with pysftp.Connection(host=self.myHostname, username=self.myUsernameMcSLL, private_key=self.private_key, cnopts=self.cnopts) as sftp:
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 140, in __init__
+    self._start_transport(host, port)
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 176, in _start_transport
+    self._transport = paramiko.Transport((host, port))
+  File "/usr/local/lib/python3.7/site-packages/paramiko/transport.py", line 416, in __init__
+    "Unable to connect to {}: {}".format(hostname, reason)
+paramiko.ssh_exception.SSHException: Unable to connect to 3.224.61.150: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 313, in test21_checkDownloadMcCannFileMcSLL
+    raise Exception("E--- Unable to DL McCann File as NYL user!")
+Exception: E--- Unable to DL McCann File as NYL user!
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test22_checkDownloadNylFileMcSLL</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">Exception: E--- Unable to DL NYL File as NYL user!</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 317, in test22_checkDownloadNylFileMcSLL
+    with pysftp.Connection(host=self.myHostname, username=self.myUsernameMcSLL, private_key=self.private_key, cnopts=self.cnopts) as sftp:
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 140, in __init__
+    self._start_transport(host, port)
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 176, in _start_transport
+    self._transport = paramiko.Transport((host, port))
+  File "/usr/local/lib/python3.7/site-packages/paramiko/transport.py", line 416, in __init__
+    "Unable to connect to {}: {}".format(hostname, reason)
+paramiko.ssh_exception.SSHException: Unable to connect to 3.224.61.150: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 321, in test22_checkDownloadNylFileMcSLL
+    raise Exception('E--- Unable to DL NYL File as NYL user!')
+Exception: E--- Unable to DL NYL File as NYL user!
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test23_checkUploadMcCannFileMcSLL</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>McCann SSH user unable to Upload NYL file!
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test24_checkFileStructureMcSLL</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>W--W--- Check for non deleted file
+</p><p style="color:maroon;">Exception: E--- Unable to Upload McCann File as McCann SSH user!</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 338, in test24_checkFileStructureMcSLL
+    with pysftp.Connection(host=self.myHostname, username=self.myUsernameMcSLL, private_key=self.private_key, cnopts=self.cnopts) as sftp:
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 140, in __init__
+    self._start_transport(host, port)
+  File "/usr/local/lib/python3.7/site-packages/pysftp/__init__.py", line 176, in _start_transport
+    self._transport = paramiko.Transport((host, port))
+  File "/usr/local/lib/python3.7/site-packages/paramiko/transport.py", line 416, in __init__
+    "Unable to connect to {}: {}".format(hostname, reason)
+paramiko.ssh_exception.SSHException: Unable to connect to 3.224.61.150: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/foley/Desktop/sftp/sftp.py", line 345, in test24_checkFileStructureMcSLL
+    raise Exception('E--- Unable to Upload McCann File as McCann SSH user!')
+Exception: E--- Unable to Upload McCann File as McCann SSH user!
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 25, Pass: 8, Error: 17 -- Duration: 155 ms
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html

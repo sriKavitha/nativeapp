@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//*[@resource-id = \"air.com.eprize.nylottery.app.NYLotteryApp:id/fullPage\"]"
+}

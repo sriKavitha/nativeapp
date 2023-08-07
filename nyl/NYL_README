@@ -1,0 +1,54 @@
+NYL README
+#TODO need a new html test reporting library as current one is not maintained
+
+Requirements(python 3.6 or greater):
+- requires up to date credentials file placed in local Users folder. Contact NYL QA lead to receive this file.
+  Test Data Version: andrewpii1212022.txt
+  Real Data Version: nyl1212022.txt
+
+- the following python modules are required to run this script, in order to install them see directions below:
+pip install selenium
+pip install unittest
+pip install html-testRunner
+pip install PyJWT
+
+- additional requirement steps are detailed on the following Confluence Docs
+https://rosedigital.atlassian.net/wiki/spaces/RDKB/pages/782630975/NYL+-+Purge+Tool+-+Readme
+https://rosedigital.atlassian.net/wiki/spaces/RDKB/pages/697892910/HAR+file+generation+with+BrowserMobProxy
+https://rosedigital.atlassian.net/wiki/spaces/RDKB/pages/698351640/Image+manipulation+with+Pillow+PIL
+
+Naming convention:
+HELPER - denotes helper files that are not tests but are used during manual testing process
+MANUAL - denotes tests that require tester interaction to complete
+AD - denotes Admin Dashboard tests
+API - denotes NYL Services API tests
+SSO - denotes NYL Single Sign On tests
+
+Test execution notes:
+- Suites of tests for various systems have been collected in runner.py and can be executed as a whole.
+- Open the runner.py file and comment / comment out the suite that you wish to execute.
+
+- For the SSO tests, registration flows that involve government ID verification start with "MANUAL" in the file name.
+- These "MANUAL" tests will fail without a testers input at the correct step.
+- An Alert will pop up on the first capture screen with instructions.
+
+- Tests can be executed on the individual file level through the IDE or via terminal.
+- If executing via command line, follow these directions:
+
+cd into the QA folder
+execute command to run test suite or individual tests using patterns below:
+
+- In python3 you can run discover mode from the terminal without any code changes.
+- The command to run test cases with a pattern is as follows:
+$python3 -m unittest discover -s <project_directory> -p "<starting_syntax>*.py"
+
+EG:
+$python3 -m unittest discover -s nyl/ -p "SSO*.py"
+would, assuming you were in the QA/ directory, run all test-cases on all files that began with "SSO" in the nyl/ folder
+
+- You can also pass in individual test files to test with the following command:
+$python3 -m unittest project_directory/test_file.py
+EG:
+$python3 -m unittest nyl/API_services_status.py
+would run the single test file "API_services_status"
+

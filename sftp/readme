@@ -1,0 +1,23 @@
+Requirements(python 3.5 or greater):
+- requires up to date sftpCreds.txt file placed in local Users folder. Contact admin to receive this file via usb drive.
+- three python modules are required to run this script, in order to install them see directions below:
+
+pip install pysftp
+pip install unittest 
+pip install html-testRunner
+
+
+
+Directions:
+- cd into sftp folder
+- check existence of test100.txt and testFile.txt files
+- run python file from within sftp folder
+
+cd sftp
+python sftp.py
+
+
+
+
+Extra:
+-Please see in line comments in python file for extra notes and debugging directions 

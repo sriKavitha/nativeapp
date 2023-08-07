@@ -1,0 +1,287 @@
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session[39m
+[38;5;0m[HTTP][0m [90m{"capabilities":{"alwaysMatch":{"appium:platformName":"Android","appium:platformVersion":"11.0","appium:deviceName":"Pixel 3","appium:automationName":"UIAutomator2","appium:app":"/private/var/kavitha/Documents/appiumjs/QA/android_js/app/android/app-qa.apk","appium:autoGrantPermissions":true,"appium:autoLaunch":false,"appium:browserName":"chrome"},"firstMatch":[{}]},"desiredCapabilities":{"appium:platformName":"Android","appium:platformVersion":"11.0","appium:deviceName":"Pixel 3","appium:automationName":"UIAutomator2","appium:app":"/private/var/kavitha/Documents/appiumjs/QA/android_js/app/android/app-qa.apk","appium:autoGrantPermissions":true,"appium:autoLaunch":false,"appium:browserName":"chrome"}}[39m
+[debug] [38;5;16m[AppiumDriver@43ff][0m Calling AppiumDriver.createSession() with args: [{"appium:platformName":"Android","appium:platformVersion":"11.0","appium:deviceName":"Pixel 3","appium:automationName":"UIAutomator2","appium:app":"/private/var/kavitha/Documents/appiumjs/QA/android_js/app/android/app-qa.apk","appium:autoGrantPermissions":true,"appium:autoLaunch":false,"appium:browserName":"chrome"},null,{"alwaysMatch":{"appium:platformName":"Android","appium:platformVersion":"11.0","appium:deviceName":"Pixel 3","appium:automationName":"UIAutomator2","appium:app":"/private/var/kavitha/Documents/appiumjs/QA/android_js/app/android/app-qa.apk","appium:autoGrantPermissions":true,"appium:autoLaunch":false,"appium:browserName":"chrome"},"firstMatch":[{}]}]
+[debug] [38;5;16m[AppiumDriver@43ff][0m Event 'newSessionRequested' logged at 1684864426743 (13:53:46 GMT-0400 (Eastern Daylight Time))
+[38;5;32m[BaseDriver][0m The capabilities ["platformName","browserName"] are standard capabilities and do not require "appium:" prefix
+[35m[Appium][39m Attempting to find matching driver for automationName 'UIAutomator2' and platformName 'Android'
+[35m[Appium][39m The 'uiautomator2' driver was installed and matched caps.
+[35m[Appium][39m Will require it at /private/var/kavitha/Documents/appiumjs/QA/node_modules/appium-uiautomator2-driver
+[debug] [35m[Appium][39m Requiring driver at /private/var/kavitha/Documents/appiumjs/QA/node_modules/appium-uiautomator2-driver
+[38;5;16m[AppiumDriver@43ff][0m Appium v2.0.0-beta.71 creating new AndroidUiautomator2Driver (v2.24.0) session
+[38;5;16m[AppiumDriver@43ff][0m Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+[38;5;16m[AppiumDriver@43ff][0m Appium's BaseDriver version is 9.3.10
+[38;5;16m[AppiumDriver@43ff][0m AndroidUiautomator2Driver's BaseDriver version is 9.3.10
+[38;5;16m[AppiumDriver@43ff][0m Applying relaxed security to 'AndroidUiautomator2Driver' as per server command line argument. All insecure features will be enabled unless explicitly disabled by --deny-insecure
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46][0m Creating session with W3C capabilities: {
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46][0m   "alwaysMatch": {
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46][0m     "platformName": "Android",
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46][0m     "appium:platformVersion": "11.0",
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46][0m     "appium:deviceName": "Pixel 3",
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46][0m     "appium:automationName": "UIAutomator2",
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46][0m     "appium:app": "/private/var/kavitha/Documents/appiumjs/QA/android_js/app/android/app-qa.apk",
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46][0m     "appium:autoGrantPermissions": true,
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46][0m     "appium:autoLaunch": false,
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46][0m     "browserName": "chrome"
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46][0m   },
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46][0m   "firstMatch": [
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46][0m     {}
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46][0m   ]
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46][0m }
+[38;5;64m[AndroidDriver][0m The desired capabilities should generally not include both an 'app' and a 'browserName'
+[38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Session created with session id: c5015fc1-9dbf-4607-9487-5286094bee99
+[38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m We're going to run a Chrome-based session
+[38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Chrome-type package and activity are com.android.chrome and com.google.android.apps.chrome.Main
+[38;5;32m[BaseDriver][0m Using local app '/private/var/kavitha/Documents/appiumjs/QA/android_js/app/android/app-qa.apk'
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Checking whether app is actually present
+[38;5;80m[ADB][0m Found 1 'build-tools' folders under '/var/kavitha/Library/Android/sdk' (newest first):
+[38;5;80m[ADB][0m     /var/kavitha/Library/Android/sdk/build-tools/33.0.1
+[38;5;80m[ADB][0m Using 'adb' from '/var/kavitha/Library/Android/sdk/platform-tools/adb'
+[debug] [38;5;80m[ADB][0m Running '/var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+[38;5;64m[AndroidDriver][0m Retrieving device list
+[debug] [38;5;80m[ADB][0m Trying to find a connected android device
+[debug] [38;5;80m[ADB][0m Getting connected devices
+[debug] [38;5;80m[ADB][0m Connected devices: [{"udid":"emulator-5554","state":"device"}]
+[38;5;64m[AndroidDriver][0m Looking for a device with Android '11.0.0'
+[debug] [38;5;80m[ADB][0m Setting device id to emulator-5554
+[38;5;80m[ADB][0m Getting device platform version
+[debug] [38;5;80m[ADB][0m Running '/var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+[debug] [38;5;80m[ADB][0m Current device property 'ro.build.version.release': 11
+[38;5;64m[AndroidDriver][0m Using device: emulator-5554
+[38;5;80m[ADB][0m Using 'adb' from '/var/kavitha/Library/Android/sdk/platform-tools/adb'
+[debug] [38;5;80m[ADB][0m Running '/var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+[debug] [38;5;80m[ADB][0m Setting device id to emulator-5554
+[debug] [38;5;80m[ADB][0m Running '/var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+[debug] [38;5;80m[ADB][0m Current device property 'ro.build.version.sdk': 30
+[38;5;80m[ADB][0m Getting device platform version
+[debug] [38;5;80m[ADB][0m Running '/var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+[debug] [38;5;80m[ADB][0m Current device property 'ro.build.version.release': 11
+[debug] [38;5;80m[ADB][0m Device API level: 30
+[38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Relaxing hidden api policy
+[debug] [38;5;80m[ADB][0m Running '/var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+[debug] [38;5;80m[ADB][0m Running '/var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 wait-for-device'
+[debug] [38;5;80m[ADB][0m Running '/var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell echo ping'
+[debug] [38;5;64m[AndroidDriver][0m Pushing settings apk to device...
+[debug] [38;5;80m[ADB][0m Getting install status for io.appium.settings
+[debug] [38;5;80m[ADB][0m Running '/var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+[debug] [38;5;80m[ADB][0m 'io.appium.settings' is installed
+[debug] [38;5;80m[ADB][0m Getting package info for 'io.appium.settings'
+[debug] [38;5;80m[ADB][0m Running '/var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+[debug] [38;5;80m[ADB][0m The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('5.0.3' >= '5.0.3')
+[debug] [38;5;80m[ADB][0m There is no need to install/upgrade '/private/var/kavitha/Documents/appiumjs/QA/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+[debug] [38;5;80m[ADB][0m Getting IDs of all 'io.appium.settings' processes
+[debug] [38;5;80m[ADB][0m Running '/var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'pgrep --help; echo $?''
+[debug] [38;5;80m[ADB][0m Running '/var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pgrep -f \(\[\[:blank:\]\]\|\^\)io\.appium\.settings\(\[\[:blank:\]\]\|\$\)'
+[debug] [38;5;64m[AndroidDriver][0m io.appium.settings is already running. There is no need to reset its permissions.
+[debug] [38;5;96m[Logcat][0m Starting logs capture with command: /var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 logcat -v threadtime
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Forwarding UiAutomator2 Server port 6790 to local port 8200
+[debug] [38;5;80m[ADB][0m Forwarding system: 8200 to device: 6790
+[debug] [38;5;80m[ADB][0m Running '/var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 forward tcp:8200 tcp:6790'
+[debug] [38;5;80m[ADB][0m Getting install status for io.appium.uiautomator2.server
+[debug] [38;5;80m[ADB][0m Running '/var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+[debug] [38;5;80m[ADB][0m 'io.appium.uiautomator2.server' is installed
+[debug] [38;5;80m[ADB][0m Getting package info for 'io.appium.uiautomator2.server'
+[debug] [38;5;80m[ADB][0m Running '/var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+[debug] [38;5;80m[ADB][0m The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('5.8.2' >= '5.8.2')
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m io.appium.uiautomator2.server installation state: sameVersionInstalled
+[debug] [38;5;80m[ADB][0m Checking app cert for /private/var/kavitha/Documents/appiumjs/QA/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v5.8.2.apk
+[38;5;80m[ADB][0m Using 'apksigner.jar' from '/var/kavitha/Library/Android/sdk/build-tools/33.0.1/lib/apksigner.jar'
+[debug] [38;5;80m[ADB][0m Starting apksigner: /Library/Java/JavaVirtualMachines/jdk1.8.0_341.jdk/Contents/Home/bin/java -Xmx1024M -Xss1m -jar /var/kavitha/Library/Android/sdk/build-tools/33.0.1/lib/apksigner.jar verify --print-certs /private/var/kavitha/Documents/appiumjs/QA/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v5.8.2.apk
+[debug] [38;5;80m[ADB][0m apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+[debug] [38;5;80m[ADB][0m Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+[debug] [38;5;80m[ADB][0m Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+[debug] [38;5;80m[ADB][0m Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+[debug] [38;5;80m[ADB][0m 
+[debug] [38;5;80m[ADB][0m sha256 hash did match for 'appium-uiautomator2-server-v5.8.2.apk'
+[38;5;80m[ADB][0m '/private/var/kavitha/Documents/appiumjs/QA/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v5.8.2.apk' is signed with the default certificate
+[debug] [38;5;80m[ADB][0m Getting install status for io.appium.uiautomator2.server.test
+[debug] [38;5;80m[ADB][0m Running '/var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server.test'
+[debug] [38;5;80m[ADB][0m 'io.appium.uiautomator2.server.test' is installed
+[debug] [38;5;80m[ADB][0m Checking app cert for /private/var/kavitha/Documents/appiumjs/QA/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk
+[debug] [38;5;80m[ADB][0m Starting apksigner: /Library/Java/JavaVirtualMachines/jdk1.8.0_341.jdk/Contents/Home/bin/java -Xmx1024M -Xss1m -jar /var/kavitha/Library/Android/sdk/build-tools/33.0.1/lib/apksigner.jar verify --print-certs /private/var/kavitha/Documents/appiumjs/QA/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk
+[debug] [38;5;80m[ADB][0m apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+[debug] [38;5;80m[ADB][0m Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+[debug] [38;5;80m[ADB][0m Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+[debug] [38;5;80m[ADB][0m Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+[debug] [38;5;80m[ADB][0m 
+[debug] [38;5;80m[ADB][0m sha256 hash did match for 'appium-uiautomator2-server-debug-androidTest.apk'
+[38;5;80m[ADB][0m '/private/var/kavitha/Documents/appiumjs/QA/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' is signed with the default certificate
+[38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Server packages are not going to be (re)installed
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Waiting up to 30000ms for services to be available
+[debug] [38;5;80m[ADB][0m Running '/var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm list instrumentation'
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+[38;5;80m[ADB][0m Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+[debug] [38;5;80m[ADB][0m Got the following command chunks to execute: [["dumpsys","deviceidle","whitelist","+io.appium.settings",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server.test",";"]]
+[debug] [38;5;80m[ADB][0m Running '/var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys deviceidle whitelist +io.appium.settings ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server.test ;'
+[debug] [38;5;80m[ADB][0m Checking app cert for /private/var/kavitha/Documents/appiumjs/QA/android_js/app/android/app-qa.apk
+[debug] [38;5;80m[ADB][0m Starting apksigner: /Library/Java/JavaVirtualMachines/jdk1.8.0_341.jdk/Contents/Home/bin/java -Xmx1024M -Xss1m -jar /var/kavitha/Library/Android/sdk/build-tools/33.0.1/lib/apksigner.jar verify --print-certs /private/var/kavitha/Documents/appiumjs/QA/android_js/app/android/app-qa.apk
+[debug] [38;5;80m[ADB][0m apksigner stdout: Signer #1 certificate DN: CN=Android Debug, OU=Unknown, O=Android, L=Unknown, ST=Unknown, C=US
+[debug] [38;5;80m[ADB][0m Signer #1 certificate SHA-256 digest: 291abf994afaec0d49147a6170861f8345308fa3126731d798dff245432fdbd4
+[debug] [38;5;80m[ADB][0m Signer #1 certificate SHA-1 digest: abcf973c99de13075f6b26fd504d850e5928a9fb
+[debug] [38;5;80m[ADB][0m Signer #1 certificate MD5 digest: 6bcb026777661b0b6be254d8d33577a1
+[debug] [38;5;80m[ADB][0m 
+[38;5;80m[ADB][0m '/private/var/kavitha/Documents/appiumjs/QA/android_js/app/android/app-qa.apk' is signed with a non-default certificate
+[debug] [38;5;80m[ADB][0m Getting install status for com.android.chrome
+[debug] [38;5;80m[ADB][0m Running '/var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package com.android.chrome'
+[debug] [38;5;80m[ADB][0m 'com.android.chrome' is installed
+[debug] [38;5;80m[ADB][0m Getting package info for 'com.android.chrome'
+[debug] [38;5;80m[ADB][0m Running '/var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package com.android.chrome'
+[debug] [38;5;80m[ADB][0m The version code of the installed 'com.android.chrome' is greater than the application version code (410410681 > 2006173)
+[debug] [38;5;80m[ADB][0m There is no need to downgrade 'com.android.chrome'
+[38;5;64m[AndroidDriver][0m Performing fast reset on 'com.android.chrome'
+[debug] [38;5;80m[ADB][0m Getting install status for com.android.chrome
+[debug] [38;5;80m[ADB][0m Running '/var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package com.android.chrome'
+[debug] [38;5;80m[ADB][0m 'com.android.chrome' is installed
+[debug] [38;5;80m[ADB][0m Running '/var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop com.android.chrome'
+[debug] [38;5;80m[ADB][0m Running '/var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm clear com.android.chrome'
+[debug] [38;5;80m[ADB][0m Running '/var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package com.android.chrome'
+[debug] [38;5;80m[ADB][0m Retrieving requested permissions
+[debug] [38;5;80m[ADB][0m Retrieved 36 permissions from requested group
+[debug] [38;5;80m[ADB][0m Retrieving granted permissions
+[debug] [38;5;80m[ADB][0m Retrieved 29 permissions from install,runtime groups
+[debug] [38;5;80m[ADB][0m Granting permissions ["android.permission.READ_CONTACTS","android.permission.REQUEST_INSTALL_PACKAGES","android.permission.CAMERA","android.permission.GET_ACCOUNTS","android.permission.READ_EXTERNAL_STORAGE","android.permission.RECORD_AUDIO","android.permission.WRITE_EXTERNAL_STORAGE"] to 'com.android.chrome'
+[debug] [38;5;80m[ADB][0m Got the following command chunks to execute: [["pm","grant","com.android.chrome","android.permission.READ_CONTACTS",";","pm","grant","com.android.chrome","android.permission.REQUEST_INSTALL_PACKAGES",";","pm","grant","com.android.chrome","android.permission.CAMERA",";","pm","grant","com.android.chrome","android.permission.GET_ACCOUNTS",";","pm","grant","com.android.chrome","android.permission.READ_EXTERNAL_STORAGE",";","pm","grant","com.android.chrome","android.permission.RECORD_AUDIO",";","pm","grant","com.android.chrome","android.permission.WRITE_EXTERNAL_STORAGE",";"]]
+[debug] [38;5;80m[ADB][0m Running '/var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm grant com.android.chrome android.permission.READ_CONTACTS ; pm grant com.android.chrome android.permission.REQUEST_INSTALL_PACKAGES ; pm grant com.android.chrome android.permission.CAMERA ; pm grant com.android.chrome android.permission.GET_ACCOUNTS ; pm grant com.android.chrome android.permission.READ_EXTERNAL_STORAGE ; pm grant com.android.chrome android.permission.RECORD_AUDIO ; pm grant com.android.chrome android.permission.WRITE_EXTERNAL_STORAGE ;'
+[debug] [38;5;64m[AndroidDriver][0m Performed fast reset on the installed 'com.android.chrome' application (stop and clear)
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Performing shallow cleanup of automation leftovers
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m No obsolete sessions have been detected (socket hang up)
+[debug] [38;5;80m[ADB][0m Running '/var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop io.appium.uiautomator2.server.test'
+[38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Starting UIAutomator2 server 5.8.2
+[38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Using UIAutomator2 server from '/private/var/kavitha/Documents/appiumjs/QA/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v5.8.2.apk' and test from '/private/var/kavitha/Documents/appiumjs/QA/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+[38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Waiting up to 30000ms for UiAutomator2 to be online...
+[debug] [38;5;80m[ADB][0m Creating ADB subprocess with args: ["-P",5037,"-s","emulator-5554","shell","am","instrument","-w","-e","disableAnalytics",true,"io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner"]
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Matched '/status' to command name 'getStatus'
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+[38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m socket hang up
+[debug] [38;5;112m[Instrumentation][0m io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Matched '/status' to command name 'getStatus'
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+[38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m socket hang up
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Matched '/status' to command name 'getStatus'
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+[38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m socket hang up
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Matched '/status' to command name 'getStatus'
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Got response with status 200: {"sessionId":"None","value":{"message":"UiAutomator2 Server is ready to accept commands","ready":true}}
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m The initialization of the instrumentation process took 3194ms
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Matched '/session' to command name 'createSession'
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Proxying [POST /session] to [POST http://127.0.0.1:8200/session] with body: {"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","browserName":"chrome","platformVersion":"11.0","deviceName":"Pixel 3","automationName":"UIAutomator2","app":"/private/var/kavitha/Documents/appiumjs/QA/android_js/app/android/app-qa.apk","autoGrantPermissions":true,"autoLaunch":false},"platformName":"Android","browserName":"chrome","platformVersion":"11.0","deviceName":"emulator-5554","automationName":"UIAutomator2","app":"/private/var/kavitha/Documents/appiumjs/QA/android_js/app/android/app-qa.apk","autoGrantPermissions":true,"autoLaunch":false,"appPackage":"com.android.chrome","appActivity":"com.google.android.apps.chrome.Main","deviceUDID":"emulator-5554"}],"alwaysMatch":{}}}
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Got response with status 200: {"sessionId":"ff1a803f-58c4-4331-b301-b3cbfd491e4e","value":{"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","browserName":"chrome","platformVersion":"11.0","deviceName":"Pixel 3","automationName":"UIAutomator2","app":"/private/var/kavitha/Documents/appiumjs/QA/android_js/app/android/app-qa.apk","autoGrantPermissions":true,"autoLaunch":false},"platformName":"Android","browserName":"chrome","platformVersion":"11.0","deviceName":"emulator-5554","automationName":"UIAutomator2","app":"/private/var/kavitha/Documents/appiumjs/QA/android_js/app/android/app-qa.apk","autoGrantPermissions":true,"autoLaunch":false,"appPackage":"com.android.chrome","appActivity":"com.google.android.apps.chrome.Main","deviceUDID":"emulator-5554"}],"alwaysMatch":{}},"sessionId":"ff1a803f-58c4-4331-b301-b3cbfd491e4e"}}
+[38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Determined the downstream protocol as 'W3C'
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Proxying [GET /appium/device/info] to [GET http://127.0.0.1:8200/session/ff1a803f-58c4-4331-b301-b3cbfd491e4e/appium/device/info] with no body
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Got response with status 200: {"sessionId":"ff1a803f-58c4-4331-b301-b3cbfd491e4e","value":{"androidId":"1fbf07c6f510b863","apiVersion":"30","bluetooth":{"state":"ON"},"brand":"google","carrierName":"Android","displayDensity":440,"locale":"en_US","manufacturer":"Google","model":"sdk_gphone_x86","networks":[{"capabilities":{"SSID":null,"linkDownBandwidthKbps":30000,"linkUpstreamBandwidthKbps":15000,"networkCapabilities":"NET_CAPABILITY_MMS,NET_CAPABILITY_SUPL,NET_CAPABILITY_DUN,NET_CAPABILITY_FOTA,NET_CAPABILITY_IMS,NET_CAPABILITY_CBS,NET_CAPABILITY_INTERNET,NET_CAPABILITY_NOT_RESTRICTED,NET_CAPABILITY_TRUSTED,NET_CAPABILITY_NOT_VPN,NET_CAPABILITY_VALIDATED,NET_CAPABILITY_NOT_ROAMING,NET_CAPABILITY_NOT_CONGESTED,NET_CAPABILITY_NOT_SUSPENDED","signalStrength":-2147483648,"transportTypes":"TRANSPORT_CELLULAR"},"detailedState":"CONNECTED","extraInfo":"epc.tmobile.com","isAvailable":true,"isConnected":true,"isFailover":false,"isRoaming":false,"state":"CONNECTED","subtype":13,"subtypeName":"LTE","type":0,"typeName":"MOBILE"},{"capabilities":{...
+[debug] [38;5;80m[ADB][0m Running '/var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window'
+[38;5;64m[AndroidDriver][0m Screen already unlocked, doing nothing
+[38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Starting a chrome-based browser session
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m A port was not given, using random free port: 8000
+[debug] [38;5;64m[AndroidDriver][0m Precalculated Chromedriver capabilities: {
+[debug] [38;5;64m[AndroidDriver][0m   "androidPackage": "com.android.chrome",
+[debug] [38;5;64m[AndroidDriver][0m   "androidDeviceSerial": "emulator-5554"
+[debug] [38;5;64m[AndroidDriver][0m }
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Before starting chromedriver, androidPackage is 'com.android.chrome'
+[debug] [38;5;128m[Chromedriver@76d8][0m Changed state to 'starting'
+[debug] [38;5;128m[Chromedriver@76d8][0m Using the static Chromedriver->Chrome mapping
+[debug] [38;5;128m[Chromedriver@76d8][0m The most recent known Chrome version: 113.0.5672
+[debug] [38;5;128m[Chromedriver@76d8][0m Found 3 executables in '/private/var/kavitha/Documents/appiumjs/QA/node_modules/appium-uiautomator2-driver/node_modules/appium-chromedriver/chromedriver/mac'
+[debug] [38;5;128m[Chromedriver@76d8][0m The following Chromedriver executables were found:
+[debug] [38;5;128m[Chromedriver@76d8][0m     '/private/var/kavitha/Documents/appiumjs/QA/node_modules/appium-uiautomator2-driver/node_modules/appium-chromedriver/chromedriver/mac/chromedriver_mac64_v113.0.5672.63' (version '113.0.5672.63', minimum Chrome version '113.0.5672')
+[debug] [38;5;128m[Chromedriver@76d8][0m     '/private/var/kavitha/Documents/appiumjs/QA/node_modules/appium-uiautomator2-driver/node_modules/appium-chromedriver/chromedriver/mac/chromedriver_mac64_v83.0.4103.39' (version '83.0.4103.39', minimum Chrome version '83.0.4103')
+[debug] [38;5;128m[Chromedriver@76d8][0m     '/private/var/kavitha/Documents/appiumjs/QA/node_modules/appium-uiautomator2-driver/node_modules/appium-chromedriver/chromedriver/mac/chromedriver_mac64_v83.0.4103.14' (version '83.0.4103.14', minimum Chrome version '83')
+[38;5;128m[Chromedriver@76d8][0m Found 1 Chromedriver, which is missing in the list of known versions: {"83.0.4103.14":"83"}
+[38;5;128m[Chromedriver@76d8][0m No mapping path provided
+[debug] [38;5;80m[ADB][0m Getting package info for 'com.android.chrome'
+[debug] [38;5;80m[ADB][0m Running '/var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package com.android.chrome'
+[debug] [38;5;128m[Chromedriver@76d8][0m Found Chrome bundle 'com.android.chrome' version '83.0.4103'
+[debug] [38;5;128m[Chromedriver@76d8][0m Found 2 executables capable of automating Chrome '83.0.4103'.
+[debug] [38;5;128m[Chromedriver@76d8][0m Choosing the most recent, '/private/var/kavitha/Documents/appiumjs/QA/node_modules/appium-uiautomator2-driver/node_modules/appium-chromedriver/chromedriver/mac/chromedriver_mac64_v83.0.4103.39'.
+[debug] [38;5;128m[Chromedriver@76d8][0m If a specific version is required, specify it with the `chromedriverExecutable`desired capability.
+[38;5;128m[Chromedriver@76d8][0m Set chromedriver binary as: /private/var/kavitha/Documents/appiumjs/QA/node_modules/appium-uiautomator2-driver/node_modules/appium-chromedriver/chromedriver/mac/chromedriver_mac64_v83.0.4103.39
+[debug] [38;5;128m[Chromedriver@76d8][0m Killing any old chromedrivers, running: pkill -15 -f "/private/var/kavitha/Documents/appiumjs/QA/node_modules/appium-uiautomator2-driver/node_modules/appium-chromedriver/chromedriver/mac/chromedriver_mac64_v83.0.4103.39.*--port=8000"
+[38;5;128m[Chromedriver@76d8][0m No old chromedrivers seem to exist
+[debug] [38;5;128m[Chromedriver@76d8][0m Cleaning this device's adb forwarded port socket connections: emulator-5554
+[debug] [38;5;80m[ADB][0m List forwarding ports
+[debug] [38;5;80m[ADB][0m Running '/var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 forward --list'
+[38;5;128m[Chromedriver@76d8][0m Spawning chromedriver with: /private/var/kavitha/Documents/appiumjs/QA/node_modules/appium-uiautomator2-driver/node_modules/appium-chromedriver/chromedriver/mac/chromedriver_mac64_v83.0.4103.39 --port=8000 --adb-port=5037 --verbose
+[debug] [38;5;128m[Chromedriver@76d8][0m ChromeDriver version: '83.0.4103.39'
+[debug] [38;5;128m[Chromedriver@76d8][0m Matched '/status' to command name 'getStatus'
+[debug] [38;5;128m[Chromedriver@76d8][0m Proxying [GET /status] to [GET http://127.0.0.1:8000/status] with no body
+[38;5;128m[Chromedriver@76d8][0m connect ECONNREFUSED 127.0.0.1:8000
+[debug] [38;5;128m[Chromedriver@76d8][0m Matched '/status' to command name 'getStatus'
+[debug] [38;5;128m[Chromedriver@76d8][0m Proxying [GET /status] to [GET http://127.0.0.1:8000/status] with no body
+[debug] [38;5;128m[Chromedriver@76d8][0m Got response with status 200: {"value":{"build":{"version":"83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416})"},"message":"ChromeDriver ready for new sessions.","os":{"arch":"x86_64","name":"Mac OS X","version":"10.16.0"},"ready":true}}
+[38;5;128m[Chromedriver@76d8][0m Starting W3C Chromedriver session with capabilities: {
+[38;5;128m[Chromedriver@76d8][0m   "capabilities": {
+[38;5;128m[Chromedriver@76d8][0m     "alwaysMatch": {
+[38;5;128m[Chromedriver@76d8][0m       "goog:chromeOptions": {
+[38;5;128m[Chromedriver@76d8][0m         "androidPackage": "com.android.chrome",
+[38;5;128m[Chromedriver@76d8][0m         "androidDeviceSerial": "emulator-5554"
+[38;5;128m[Chromedriver@76d8][0m       },
+[38;5;128m[Chromedriver@76d8][0m       "goog:loggingPrefs": {
+[38;5;128m[Chromedriver@76d8][0m         "browser": "ALL"
+[38;5;128m[Chromedriver@76d8][0m       }
+[38;5;128m[Chromedriver@76d8][0m     }
+[38;5;128m[Chromedriver@76d8][0m   }
+[38;5;128m[Chromedriver@76d8][0m }
+[debug] [38;5;128m[Chromedriver@76d8][0m Matched '/session' to command name 'createSession'
+[debug] [38;5;128m[Chromedriver@76d8][0m Proxying [POST /session] to [POST http://127.0.0.1:8000/session] with body: {"capabilities":{"alwaysMatch":{"goog:chromeOptions":{"androidPackage":"com.android.chrome","androidDeviceSerial":"emulator-5554"},"goog:loggingPrefs":{"browser":"ALL"}}}}
+[debug] [38;5;128m[Chromedriver@76d8][0m Webview version: 'Chrome/83.0.4103.106'
+[debug] [38;5;128m[Chromedriver@76d8][0m Got response with status 200: {"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"83.0.4103.106","chrome":{"chromedriverVersion":"83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416})"},"goog:chromeOptions":{"debuggerAddress":"localhost:60901"},"pageLoadStrategy":"normal","platformName":"android","proxy":{},"setWindowRect":false,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:virtualAuthenticators":false},"sessionId":"7d8c20a6b5fdb2bb3c8bea3889b3e1b6"}}
+[38;5;128m[Chromedriver@76d8][0m Determined the downstream protocol as 'W3C'
+[debug] [38;5;128m[Chromedriver@76d8 (7d8c20a6)][0m Changed state to 'online'
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Proxying [GET /appium/device/pixel_ratio] to [GET http://127.0.0.1:8200/session/ff1a803f-58c4-4331-b301-b3cbfd491e4e/appium/device/pixel_ratio] with no body
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Got response with status 200: {"sessionId":"ff1a803f-58c4-4331-b301-b3cbfd491e4e","value":2.75}
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Matched '/appium/device/system_bars' to command name 'getSystemBars'
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Proxying [GET /appium/device/system_bars] to [GET http://127.0.0.1:8200/session/ff1a803f-58c4-4331-b301-b3cbfd491e4e/appium/device/system_bars] with no body
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Got response with status 200: {"sessionId":"ff1a803f-58c4-4331-b301-b3cbfd491e4e","value":{"statusBar":66}}
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Matched '/window/current/size' to command name 'getWindowSize'
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Proxying [GET /window/current/size] to [GET http://127.0.0.1:8200/session/ff1a803f-58c4-4331-b301-b3cbfd491e4e/window/current/size] with no body
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Got response with status 200: {"sessionId":"ff1a803f-58c4-4331-b301-b3cbfd491e4e","value":{"height":2028,"width":1080}}
+[38;5;16m[AppiumDriver@43ff][0m New AndroidUiautomator2Driver session created successfully, session c5015fc1-9dbf-4607-9487-5286094bee99 added to master session list
+[debug] [38;5;16m[AppiumDriver@43ff][0m Event 'newSessionStarted' logged at 1684864440534 (13:54:00 GMT-0400 (Eastern Daylight Time))
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Cached the protocol value 'W3C' for the new session c5015fc1-9dbf-4607-9487-5286094bee99
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Responding to client with driver.createSession() result: {"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","browserName":"chrome","platformVersion":"11.0","deviceName":"Pixel 3","automationName":"UIAutomator2","app":"/private/var/kavitha/Documents/appiumjs/QA/android_js/app/android/app-qa.apk","autoGrantPermissions":true,"autoLaunch":false},"platformName":"Android","browserName":"chrome","platformVersion":"11","deviceName":"emulator-5554","automationName":"UIAutomator2","app":"/private/var/kavitha/Documents/appiumjs/QA/android_js/app/android/app-qa.apk","autoGrantPermissions":true,"autoLaunch":false,"appPackage":"com.android.chrome","appActivity":"com.google.android.apps.chrome.Main","deviceUDID":"emulator-5554","deviceApiLevel":30,"deviceScreenSize":"1080x2160","deviceScreenDensity":440,"deviceModel":"sdk_gphone_x86","deviceManufacturer":"Google","pixelRatio":2.75,"st...
+[38;5;0m[HTTP][0m [37m<-- POST /session [39m[32m200[39m [90m13797 ms - 1161[39m
+[38;5;0m[HTTP][0m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c5015fc1-9dbf-4607-9487-5286094bee99/url[39m
+[38;5;0m[HTTP][0m [90m{"url":"https://www.google.com/"}[39m
+[38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Driver proxy active, passing request on via HTTP proxy
+[debug] [38;5;128m[Chromedriver@76d8 (7d8c20a6)][0m Matched '/session/c5015fc1-9dbf-4607-9487-5286094bee99/url' to command name 'setUrl'
+[debug] [38;5;128m[Chromedriver@76d8 (7d8c20a6)][0m Proxying [POST /session/c5015fc1-9dbf-4607-9487-5286094bee99/url] to [POST http://127.0.0.1:8000/session/7d8c20a6b5fdb2bb3c8bea3889b3e1b6/url] with body: {"url":"https://www.google.com/"}
+[debug] [38;5;128m[Chromedriver@76d8 (7d8c20a6)][0m Got response with status 200: {"value":null}
+[38;5;0m[HTTP][0m [37m<-- POST /session/c5015fc1-9dbf-4607-9487-5286094bee99/url [39m[32m200[39m [90m4433 ms - 14[39m
+[38;5;0m[HTTP][0m [90m[39m
+[38;5;0m[HTTP][0m [37m-->[39m [37mDELETE[39m [37m/session/c5015fc1-9dbf-4607-9487-5286094bee99[39m
+[38;5;0m[HTTP][0m [90m{}[39m
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Calling AppiumDriver.deleteSession() with args: ["c5015fc1-9dbf-4607-9487-5286094bee99"]
+[debug] [38;5;16m[AppiumDriver@43ff][0m Event 'quitSessionRequested' logged at 1684864475023 (13:54:35 GMT-0400 (Eastern Daylight Time))
+[38;5;16m[AppiumDriver@43ff][0m Removing session c5015fc1-9dbf-4607-9487-5286094bee99 from our master session list
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Deleting UiAutomator2 session
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Stopping chromedriver for context CHROMIUM
+[debug] [38;5;128m[Chromedriver@76d8 (7d8c20a6)][0m Changed state to 'stopping'
+[debug] [38;5;128m[Chromedriver@76d8 (7d8c20a6)][0m Proxying [DELETE /] to [DELETE http://127.0.0.1:8000/session/7d8c20a6b5fdb2bb3c8bea3889b3e1b6] with no body
+[debug] [38;5;128m[Chromedriver@76d8 (7d8c20a6)][0m Got response with status 200: {"value":null}
+[debug] [38;5;128m[Chromedriver@76d8][0m Changed state to 'stopped'
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Deleting UiAutomator2 server session
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Matched '/' to command name 'deleteSession'
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Proxying [DELETE /] to [DELETE http://127.0.0.1:8200/session/ff1a803f-58c4-4331-b301-b3cbfd491e4e] with no body
+[debug] [38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Got response with status 200: {"sessionId":"ff1a803f-58c4-4331-b301-b3cbfd491e4e","value":null}
+[debug] [38;5;80m[ADB][0m Running '/var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings/.recorder.RecorderService'
+[debug] [38;5;96m[Logcat][0m Stopping logcat capture
+[debug] [38;5;80m[ADB][0m Removing forwarded port socket connection: 8200 
+[debug] [38;5;80m[ADB][0m Running '/var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 forward --remove tcp:8200'
+[38;5;48m[AndroidUiautomator2Driver@fd46 (c5015fc1)][0m Restoring hidden api policy to the device default configuration
+[debug] [38;5;80m[ADB][0m Running '/var/kavitha/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+[debug] [38;5;16m[AppiumDriver@43ff][0m Event 'quitSessionFinished' logged at 1684864475770 (13:54:35 GMT-0400 (Eastern Daylight Time))
+[debug] [38;5;16m[AppiumDriver@43ff][0m Received response: null
+[debug] [38;5;16m[AppiumDriver@43ff][0m But deleting session, so not returning
+[debug] [38;5;16m[AppiumDriver@43ff][0m Responding to client with driver.deleteSession() result: null
+[38;5;0m[HTTP][0m [37m<-- DELETE /session/c5015fc1-9dbf-4607-9487-5286094bee99 [39m[32m200[39m [90m749 ms - 14[39m
+[38;5;0m[HTTP][0m [90m[39m
+[debug] [38;5;112m[Instrumentation][0m .
+[debug] [38;5;112m[Instrumentation][0m Time: 43.178
+[debug] [38;5;112m[Instrumentation][0m 
+[debug] [38;5;112m[Instrumentation][0m OK (1 test)
+[debug] [38;5;112m[Instrumentation][0m The process has exited with code 0
+[35m[Appium][39m Received SIGTERM - shutting down
+[debug] [38;5;16m[AppiumDriver@43ff][0m There are no active sessions for cleanup
+[38;5;0m[HTTP][0m Waiting until the server is closed
+[38;5;0m[HTTP][0m Received server close event

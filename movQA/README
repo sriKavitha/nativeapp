@@ -1,0 +1,17 @@
+README
+
+The following test suite runs on a appium server with python3-selenium bindings. This will have to be set up on your local port before the test can be run.
+
+Things that must be changed before first run:
+1) You must download and move the MOV-PA ipa (simulator version) and the movCreds.txt text file to secure locations on your local testing computer
+2) line 18 of confTest.py must be changed to the proper path for the IPA of the app you are testing
+3) Line 13 of var.py mush be changed to the proper path for the movCreds.txt file
+
+To run all tests:
+- enter test directory that all test files are in, and type "python -m unittest discover" into your terminal
+
+To run individual test files:
+- enter test directory that all test files are in, and type "python [name-of-test-file]" into your terminal
+
+To have live printout: switch runner method to second option [#unittest.main(warnings='ignore')]
+to have HTML test printout: switch runner method to first option [unittest.main(warnings='ignore', testRunner=HtmlTestRunner.HTMLTestRunner(output='<html_report_dir>')]
